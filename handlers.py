@@ -1,4 +1,5 @@
 from datetime import datetime
+from weather_api import get_weather
 
 def handle_greeting(self, match=None):
     if self.name:
@@ -10,7 +11,7 @@ def handle_farewell(self, match=None):
 
 def handle_weather(self, match):
     city = match.group(1)
-    return f"Погода в городе {city}: солнечно."
+    return get_weather(city)
 
 def handle_addition(self, match):
     a = float(match.group(1))
