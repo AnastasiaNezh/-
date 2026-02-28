@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "29219ddf1d517a3fef4604c6d329e421"
+API_KEY = "тут должен быть ключ"
 
 
 def get_weather(city):
